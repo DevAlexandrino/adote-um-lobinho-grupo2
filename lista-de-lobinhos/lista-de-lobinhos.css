@@ -28,3 +28,32 @@ header nav a img {
 
 /*-------------------------------------------MAIN------------------------------------*/
 
+.filtrolobos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filtrolobos #pesquisarlobo{
+    width: 800px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-top: 15px;
+    
+}
+
+.filtrolobos div button {
+    width: 130px;
+    height: 35px;
+    background-color: #DEB959;
+    color: white;
+    border: none;
+}
+
+.checkbox {
+    display: flex;
+    margin-top: 5px;
+    margin-right: 775px;
+}
+
