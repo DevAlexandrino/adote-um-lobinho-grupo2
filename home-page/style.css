@@ -11,6 +11,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 
@@ -130,26 +131,109 @@ h1, h2, h3, p {
 
 
 .lobos{
+    width: 1039px ;
+    height: 789px ;
     display: flex ;
     flex-direction: column ;
     align-items: center;
-    justify-content: center ;
+    gap: 30px;
+    margin-top: 140px;
+    margin-bottom: 140px;
+    
 }
+
+.exemplo{
+    width: 277px;
+    height: 65px;
+    color: #DEB959;
+    size: 48px;
+}
+
+
 
 
 .contLobo{
     display: flex;
     flex-direction: row ;
+    gap: 40px;
+}
+
+
+.info_lobo h1{
+    font-size: 36px;
+}
+
+.info_lobo h3{
+    font-size: 20px;
+
+}
+
+.info_lobo p{
+    width: 461px ;
+    height: 235px ;
+
+
+}
+
+
+iframe{
+    width: 250px;
+    height: 168px;
+}
+
+
+footer{
+    margin-top: 10px;
+    display: flex ;
+    flex-direction: row;
+    align-items: center ;
+    gap: 500px ;
+    width: 100%;
+    height: 361px;
+    background-color: #333333;
+}
+
+.fott{
+    margin-left: 200px ;
+    width: 433px ;
+    height: 50% ;
+    display: flex ;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+button{
+    width: 144px;
+    height: 33px;
+    background-color: #DEB959 ;
+
 }
 
 
 
+button a{
+    list-style: none;
+}
 
 
+button p{
+    
+    font-size: 25px ;
+    font-weight: 700;
+    color: black;
+}
 
 
+.paw{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    gap: 15px;
+}
 
 
-
-
-
+.paw h1{
+    color: white;
+    font-family: 24px ;
+}
