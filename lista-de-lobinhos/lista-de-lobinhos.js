@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentPage = 1;
     const itemsPerPage = 4;
     
-    // Criar arrays filtrados
     let lobosNaoAdotados = lobos.filter(lobo => !lobo.adotado);
     let lobosAdotados = lobos.filter(lobo => lobo.adotado);
 
@@ -22,12 +21,25 @@ document.addEventListener("DOMContentLoaded", function() {
                 let nome = lobo.querySelector(".nome");
                 let idade = lobo.querySelector(".idade");
                 let descricao = lobo.querySelector(".desc");
+                let botao = lobo.querySelector(".botaoadotar");
 
                 foto.src = paginatedLobos[index].imagem;
                 nome.innerText = paginatedLobos[index].nome;
                 idade.innerText = `Idade: ${paginatedLobos[index].idade} anos`;
                 descricao.innerText = paginatedLobos[index].descricao;
-                
+
+                if (paginatedLobos[index].adotado) {
+                    botao.innerText = "Adotado";
+                    botao.style.backgroundColor = "green";
+                    botao.style.cursor = "default";
+                    botao.disabled = true;  // Desativa o botão
+                } else {
+                    botao.innerText = "Adotar";
+                    botao.style.backgroundColor = ""; // Restaura o estilo original
+                    botao.style.cursor = "pointer";
+                    botao.disabled = false;
+                }
+
                 lobo.style.display = "block"; // Mostrar lobo
             } else {
                 lobo.style.display = "none"; // Esconder lobo vazio
