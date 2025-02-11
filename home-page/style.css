@@ -1,11 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-html, body {
-    height: 100%;
-    width: 100%;
+    box-sizing: border-box;
 }
 
 body {
@@ -14,32 +10,22 @@ body {
     align-items: center;
 }
 
-
-
 body header {
     background-color: #85CDF5 ;
-    width: 1400px ;
-    height: 4.5% ;
-    display: flex  ;
-    flex-direction: row ;
+    width: 1401px ;
+    height: 130px ;
+    display: flex ;
+    flex-direction: row;
     
 }
 
-
-
-
 body header div{
-    width: 100% ;
-    height: 100% ;
-    display: flex ;
-    justify-content: space-between ;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
-
-
-
-
-
 
 body header div a p{
     display: flex;
@@ -53,6 +39,10 @@ body header div a p{
     margin-left: 100px;
     margin-right: 100px;
 
+    &:hover {
+        color: #1b3c5e;
+        transition: 0.2s;
+    }
 }
 
 header div a{
@@ -61,22 +51,20 @@ header div a{
 }
 
 
-.slide{
+.slide, .slide img {
     width: 1401px;
-    height: 500px ;
-
+    height: 500px;
 }
 
 
 .sobre{
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #2C5680;
-    display: flex ;
     flex-direction: column;
-    justify-content: center ;
-    align-items: center ;
     width: 1401px;
-    height: 333px;
+    height: 300px;
 }
 
 .sobre h1{
@@ -84,14 +72,15 @@ header div a{
     width: 112px;
     min-height: 65px;
     font-size: 48px;
-    font: Darker Grotesque ; 
+    font-family: Darker Grotesque; 
 }
 
 .sobre p{
     width: 960px;
     height: 166px;
     size: 24px;
-    font-weight: 400px ;
+    font-size: large;
+    font-weight: 400;
     line-height: 32px;
     color: white;
 }
@@ -102,7 +91,7 @@ h1, h2, h3, p {
 
 .valores{
     width: 1401px;
-    height: 625px;
+    height: 700px;
     background-color: #333333;
     display: flex;
     flex-direction: column;
@@ -112,8 +101,11 @@ h1, h2, h3, p {
 
 
 .valores div{
-    
-    gap: 5px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    width: 1000px;
     margin-top: 40px;
 }
 
@@ -127,37 +119,46 @@ h1, h2, h3, p {
 .valores img{
     margin-left: 5px;
     margin-right: 5px;
+
+    &:hover {
+        scale: 1.1;
+        transition: 0.2s;
+    }
 }
 
-
-.lobos{
-    width: 1039px ;
-    height: 789px ;
-    display: flex ;
-    flex-direction: column ;
-    align-items: center;
-    gap: 30px;
-    margin-top: 140px;
-    margin-bottom: 140px;
-    
-}
-
-.exemplo{
-    width: 277px;
-    height: 65px;
-    color: #DEB959;
-    size: 48px;
-}
-
-
-
-
-.contLobo{
+.lobos {
+    width: 1039px;
+    height: 900px;
     display: flex;
-    flex-direction: row ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 40px;
 }
 
+.lobo {
+    width: 430px;
+    height: 328px;
+}
+
+.info_lobo {
+    display: flex;
+    flex-direction: column;
+    height: 328px;
+    justify-content: space-evenly;
+}
+
+.exemplo {
+    color: #DEB959;
+    padding-bottom: 20px;
+    font-size: 48px;
+}
+
+.contLobo{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
 
 .info_lobo h1{
     font-size: 36px;
@@ -165,28 +166,24 @@ h1, h2, h3, p {
 
 .info_lobo h3{
     font-size: 20px;
-
+    font-weight: normal;
 }
 
 .info_lobo p{
-    width: 461px ;
-    height: 235px ;
-
-
+    width: 461px;
+    padding-top: 20px;
 }
-
 
 iframe{
     width: 250px;
     height: 168px;
 }
 
-
 footer{
     margin-top: 10px;
-    display: flex ;
+    display: flex;
     flex-direction: row;
-    align-items: center ;
+    align-items: center;
     gap: 500px ;
     width: 100%;
     height: 361px;
@@ -204,26 +201,22 @@ footer{
 }
 
 button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 144px;
-    height: 33px;
-    background-color: #DEB959 ;
-
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    background-color: #DEB959;
 }
-
-
 
 button a{
     list-style: none;
-}
-
-
-button p{
-    
-    font-size: 25px ;
-    font-weight: 700;
+    text-decoration: none;
     color: black;
 }
-
 
 .paw{
     display: flex;
@@ -231,7 +224,6 @@ button p{
     align-items: center;
     gap: 15px;
 }
-
 
 .paw h1{
     color: white;
