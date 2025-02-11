@@ -20,33 +20,33 @@
 <!---------------------------------HEADER PADRONIZADO------------------------------------------------------------------------------>
 
 <!---------------------------------MAIN-------------------------------------------------------------------------------------------->
-    <section class="wolf">
-        <img src="../midia/img-logo-teste.png">
-        <div>
-            <h1>Adote o(a) NomeDoLobo</h1>
-            <h3>ID:314159</h3>
+    <div id="wolf">
+        <img id="wolfImg" src="../midia/img-logo-teste.png">
+        <div style="display: flex; flex-direction: column; margin-left: 70px;">
+            <p id="nomeLobo">Adote o(a) NomeDoLobo</p>
+            <p id="idLobo">ID:314159</p>
         </div>
-    </section>
+    </div>
 
-
-    <section class="entrada" >
-        <div class="titulo">
-            <h1>Seu nome:</h1>
-            <h1>Idade:</h1>
+    <form>
+        <div id="form">
+            <div id="donoNomeIdadeDiv">
+                <div id="donoNomeDiv">
+                    <p class="textLabel">Seu nome:</p>
+                    <input id="donoNome" class="text" required></input>
+                </div>
+                <div id="donoIdadeDiv">
+                    <p class="textLabel">Idade:</p>
+                    <input id="donoIdade" class="text" required></input>
+                </div>
+            </div>
+            <div id="donoEmailDiv">
+                <p class="textLabel">E-mail:</p>
+                <input id="donoEmail" class="text" required></input>
+            </div>
+            <button id="button" type="submit">Adotar</button>
         </div>
-
-        <div  class="inputs" >
-            <input type="text" class="name" >
-            <input type="text" class="age" >
-        </div>
-        
-        
-        <div class="email">
-            <h1>Email:</h1>
-            <input type="text">
-            <button id="botao-adotar">Adotar</button>
-        </div>
-    </section>
+    </form>
 <!---------------------------------MAIN-------------------------------------------------------------------------------------------->
 
 <!---------------------------------------FOOTER PADRONIZADO------------------------------------------------------------------------>
@@ -77,16 +77,5 @@
         </div>
     </footer>
 <!-----------------------------FOOTER PADRONIZADO---------------------------------------------------------------------------------->
-
-        
-    </section>
-
-
-    
-
-
-
-
-
 </body>
 </html>

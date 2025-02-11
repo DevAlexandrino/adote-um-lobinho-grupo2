@@ -1,9 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Estilizações Globais*/
 body {
     margin: 0;
 }
@@ -42,18 +37,20 @@ header {
 /*-------------------------------------------MAIN---------------------------------------------------------------------------*/
 .slide{
     width: 1401px;
-    height: 500px;
+    height: 500px ;
+
 }
 
 
 .sobre{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
     background-color: #2C5680;
+    display: flex ;
     flex-direction: column;
+    justify-content: center ;
+    align-items: center ;
     width: 1401px;
-    height: 300px;
+    height: 333px;
 }
 
 .sobre h1{
@@ -61,15 +58,14 @@ header {
     width: 112px;
     min-height: 65px;
     font-size: 48px;
-    font-family: Darker Grotesque; 
+    font: Darker Grotesque ; 
 }
 
 .sobre p{
     width: 960px;
     height: 166px;
     size: 24px;
-    font-size: large;
-    font-weight: 400;
+    font-weight: 400px ;
     line-height: 32px;
     color: white;
 }
@@ -80,7 +76,7 @@ h1, h2, h3, p {
 
 .valores{
     width: 1401px;
-    height: 700px;
+    height: 625px;
     background-color: #333333;
     display: flex;
     flex-direction: column;
@@ -90,11 +86,8 @@ h1, h2, h3, p {
 
 
 .valores div{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 30px;
-    width: 1000px;
+    
+    gap: 5px ;
     margin-top: 40px;
 }
 
@@ -108,46 +101,37 @@ h1, h2, h3, p {
 .valores img{
     margin-left: 5px;
     margin-right: 5px;
-
-    &:hover {
-        scale: 1.1;
-        transition: 0.2s;
-    }
 }
 
-.lobos {
-    width: 1039px;
-    height: 900px;
-    display: flex;
-    flex-direction: column;
+
+.lobos{
+    width: 1039px ;
+    height: 789px ;
+    display: flex ;
+    flex-direction: column ;
     align-items: center;
-    justify-content: center;
-    gap: 40px;
+    gap: 30px;
+    margin-top: 140px;
+    margin-bottom: 140px;
+    
 }
 
-.lobo {
-    width: 430px;
-    height: 328px;
-}
-
-.info_lobo {
-    display: flex;
-    flex-direction: column;
-    height: 328px;
-    justify-content: space-evenly;
-}
-
-.exemplo {
+.exemplo{
+    width: 277px;
+    height: 65px;
     color: #DEB959;
-    padding-bottom: 20px;
-    font-size: 48px;
+    size: 48px;
 }
+
+
+
 
 .contLobo{
     display: flex;
-    flex-direction: row;
+    flex-direction: row ;
     gap: 40px;
 }
+
 
 .info_lobo h1{
     font-size: 36px;
@@ -155,12 +139,14 @@ h1, h2, h3, p {
 
 .info_lobo h3{
     font-size: 20px;
-    font-weight: normal;
+
 }
 
 .info_lobo p{
-    width: 461px;
-    padding-top: 20px;
+    width: 461px ;
+    height: 235px ;
+
+
 }
 /*-------------------------------------------MAIN---------------------------------------------------------------------------*/
 

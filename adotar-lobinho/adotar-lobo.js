@@ -6,18 +6,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Atualiza os elementos da página com os dados do lobo
-    document.querySelector(".wolf h1").innerText = `Adote o(a) ${loboSelecionado.nome}`;
-    document.querySelector(".wolf h3").innerText = `ID: ${loboSelecionado.id}`;
-    document.querySelector(".wolf img").src = loboSelecionado.imagem;
+    document.querySelector("#nomeLobo").innerText = `Adote o(a) ${loboSelecionado.nome}`;
+    document.querySelector("#idLobo").innerText = `ID: ${loboSelecionado.id}`;
+    document.querySelector("#wolfImg").src = loboSelecionado.imagem;
 
     // Captura o botão de adoção
     let botaoAdotar = document.querySelector(".email button");
     botaoAdotar.addEventListener("click", function (event) {
         event.preventDefault();
         
-        let nomeDono = document.querySelector(".name").value.trim();
-        let idadeDono = document.querySelector(".age").value.trim();
-        let emailDono = document.querySelector(".email input").value.trim();
+        let nomeDono = document.querySelector("#donoNome").value.trim();
+        let idadeDono = document.querySelector("#donoIdade").value.trim();
+        let emailDono = document.querySelector("#donoEmail").value.trim();
 
         if (!nomeDono || !idadeDono || !emailDono) {
             alert("Por favor, preencha todos os campos antes de adotar.");

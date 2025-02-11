@@ -36,118 +36,91 @@ header {
 
 
 /*-------------------------------------------MAIN---------------------------------------------------------------------------*/
-h1 , h3, a{
-    font-family: 'Darker Grotesque', sans-serif;
-}
-      
-
-
-
-.wolf{
-    margin-top: 2% ;
-    width: 80%;
-    height: 25% ;
+#wolf{
     display: flex;
-    flex-direction: row ;
-    margin-left: 20%;
-    gap: 7%;
-    
+    justify-content: center;
+    margin-bottom: 50px;
 }
-
-
-.wolf img{
+#wolfImg{
     width: 200px;
-    height: 200px ;
-    border-radius: 900px ;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
 }
-
-
-.wolf h1{
-    font-size: 60px ;
-    height: 21px;
+#idLobo {
+    margin: 0;
+    font-family: "Darker Grotesque";
+    font-size: 14px;
+    font-weight: 600
 }
-
-.wolf h3{
-    font-size: 14px ;
+#nomeLobo {
+    margin: 0;
+    font-family: "Darker Grotesque";
+    font-size: 60px;
+    font-weight: 600;
 }
-
-.entrada{
+#form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
-
-.titulo{
+#donoNomeIdadeDiv {
     display: flex;
-    flex-direction: row ;
-    justify-content: space-between ;
+    justify-content: space-between;
+    width: 960px;
 }
-
-.titulo h1{
-    margin-left: 200px ;
-    margin-right: 200px;
+#donoNomeDiv {
+    width: 868px;
+}
+#donoNome {
+    width: 868px;
+}
+#donoIdadeDiv {
+    width: 72px;
+}
+#donoIdade {
+    width: 72px
+}
+#donoEmailDiv{
+    margin: 30px;
+    width: 960px;
+}
+#donoEmail {
+    width: 960px;
+}
+.textLabel {
+    margin: 0;
     font-size: 30px;
+    font-family: "Darker Grotesque";
+    font-weight: 500;
 }
-
-
-.inputs{
-    display: flex ;
-    flex-direction: row ;
-    justify-content: center;
-    
-
+.text {
+    font-size: 24px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #333;
+    height: 23px;
 }
-
-
-
-.name{
-    width: 868px ;
-    border-left: white ;
-    border-right: white ;
-    border-top: white;
-
-}
-
-
-.age{
-    width: 100px;
-    margin-left: 70px ;
-    border-left: white ;
-    border-right: white ;
-    border-top: white;
-
-}
-
-.email{
-    margin-top: 5px;
-    display: flex;
-    flex-direction: column ;
-    justify-content: center;
-    
-}
-
-.email h1{
-    margin-left: 200px;
-    font-size: 30px;
-}
-
-.email input {
-    margin-left: 180px ;
-    margin-bottom: 30px ;
-    width: 1125px ;
-    border-left: white ;
-    border-right: white ;
-    border-top: white;
-
-}
-
-.email button{
-    width: 209px ;
+#button {
+    outline: none;
+    border: 1px solid #333;
+    font-family: "Darker Grotesque";
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+    width: 209px;
     height: 60px;
     background-color: #2C5680;
-    color: white;
-    margin-left: 650px;
-    margin-top: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 50px;
+    transition: 0.2s;
+}
+#button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    color: yellow;
 }
 /*-------------------------------------------MAIN---------------------------------------------------------------------------*/
 
