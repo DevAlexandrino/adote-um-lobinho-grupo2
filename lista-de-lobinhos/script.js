@@ -21,19 +21,3 @@ if (!localStorage.getItem('lobos')) {
         console.error('Erro durante a inicialização do localStorage:', error);
     });
 }
-
-async function atualizarLocalStorage() {
-    try {
-        const response = await fetch('lobinhos.json');
-        if (!response.ok) {
-            throw new Error(`Erro ao buscar lobinho.json: ${response.statusText}`);
-        }
-        const lobos = await response.json();
-        localStorage.setItem('lobos', JSON.stringify(lobos));
-        console.log('Lobos atualizados no localStorage');
-    } catch (error) {
-        console.error('Erro ao atualizar o localStorage:', error);
-    } finally {
-        console.log('Tentativa de atualização do localStorage concluída');
-    }
-}
