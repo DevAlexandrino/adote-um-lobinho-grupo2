@@ -1,7 +1,6 @@
 * {
     font-family:'Darker Grotesque', sans-serif;
 }
-
 body {
     margin: 0;
 }
@@ -32,68 +31,21 @@ header {
     color: #04a76b;
     transform: scale(1.5)
 }
-main {
+#main {
     display: flex;
-    justify-content: space-around
-}
-
-form {
-    width: 958px;
-    height: 874px;
-    border: 4px solid rgba(51, 51, 51, 1);
-    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-
 }
-#formTitle {
-    font-size: 60px;
-    font-weight: 550;
-    margin-bottom: 50px;
+#title {
+    font-family: 'Roboto';
+    font-size: 48px;
+    margin: 0px;
 }
-#formTexts {
-    width: 100%;
-}
-.formDivsDiv {
-    display: flex;
-    justify-content: space-between;
-}
-.formDivs {
-    height: 90px;
-    margin-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-textarea {
-    background-color: rgba(230, 230, 230, 1);
-    border: 1px solid rgba(51, 51, 51, 1);
-    height: 39px;
-    font-size: 28px;
-    resize: none;
-}
-.labels {
-    height: 41px;
-    font-size: 30px;
-    margin: 0;
-    font-weight: 500;
-}
-#formButton {
-    width: 209px;
-    height: 60px;
-    background-color: rgba(44, 86, 128, 1);
-    margin-top: 50px;
-    color: white;
-    font-family: "Roboto";
+#subtitle {
     font-size: 24px;
-    border: none;
-    outline: none;
-    transition: 0.2s ease;
-}
-#formButton:hover {
-    transform: scale(0.8);
-    color: gold;
-    cursor: pointer;
+    margin: 24px 180px 0px 180px;
+    text-align: center;
 }
 footer {
     width: 100vw;
@@ -140,7 +92,7 @@ footer {
     font-weight: 800;
     color: #353535;
     text-decoration: none;
-    transition: 0.2s ease;
+    transition: transform 0.2s ease;
 }
 #footerButton:hover {
     color: #04a76b;
@@ -150,10 +102,10 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 50px
 }
 #footerLogo {
-    transition: 0.2s ease;
+    transition: 0.2s;
 }
 #footerLogo:hover {
     transform: scale(0.8);
