@@ -63,7 +63,7 @@ header nav a img {
     align-items: center;
 }
 
-#lobo1{
+.lobo{
     display:flex;
     flex-direction: row;
     margin-top: 50px;
@@ -71,9 +71,22 @@ header nav a img {
     height: 360px;
 }
 
+.descricao2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
 .fotoetexto{
     display: flex;
     flex-direction: row;
+    gap: 20px;
+}
+
+.fotoetexto2{
+    display: flex;
+    flex-direction: row-reverse;
     gap: 20px;
 }
 
@@ -81,4 +94,13 @@ header nav a img {
     width: 430px;
     height: 330px;
     border: 1px solid black;
+}
+
+#pagination {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: none;
 }

@@ -1,57 +1,15 @@
-let lobos = JSON.parse(localStorage.getItem("lobos"));
+document.addEventListener("DOMContentLoaded", function() {
+    let lobos = JSON.parse(localStorage.getItem("lobos"));
 
-let currentPage = 1;
-const itemsPerPage = 4;
+    for (let i = 0; i < 4; i++){
+        let foto = document.getElementsByClassName("foto")[i];
+        let nome = document.getElementsByClassName("nome")[i];
+        let idade = document.getElementsByClassName("idade")[i];
+        let descricao = document.getElementsByClassName("desc")[i];
 
-// Função para exibir os lobos na página
-function renderLobos() {
-    let container = document.getElementById("lobos-container");
-    container.innerHTML = "";  // Limpa antes de inserir novos
-
-    let start = (currentPage - 1) * itemsPerPage;
-    let end = start + itemsPerPage;
-    let lobosPagina = lobos.slice(start, end);
-
-    lobosPagina.forEach(lobo => {
-        let loboDiv = document.createElement("div");
-        loboDiv.classList.add("fotoetexto");
-        loboDiv.innerHTML = `
-            <img src="${lobo.imagem}" alt="${lobo.nome}">
-            <div class="descricao">
-                <h2>${lobo.nome}</h2>
-                <p>Idade: ${lobo.idade} Anos</p>
-                <p>${lobo.descricao}</p>
-            </div>
-        `;
-        container.appendChild(loboDiv);
-    });
-
-    renderPagination();
-}
-
-// Função para criar os botões de página
-function renderPagination() {
-    let paginationContainer = document.getElementById("pagination");
-    paginationContainer.innerHTML = "";
-
-    let totalPages = Math.ceil(lobos.length / itemsPerPage);
-
-    for (let i = 1; i <= totalPages; i++) {
-        let button = document.createElement("button");
-        button.innerText = i;
-        button.onclick = function() {
-            currentPage = i;
-            renderLobos();
-        };
-
-        if (i === currentPage) {
-            button.style.fontWeight = "bold";
-        }
-
-        paginationContainer.appendChild(button);
+        foto.src = lobos[i].imagem;
+        nome.innerText = lobos[i].nome;
+        idade.innerText = `Idade: ${lobos[i].idade} anos`;
+        descricao.innerText = lobos[i].descricao;
     }
-}
-
-// Inicia o carregamento dos lobos
-document.addEventListener("DOMContentLoaded", renderLobos);
-
+});
