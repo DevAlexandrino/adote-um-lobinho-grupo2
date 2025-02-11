@@ -1,0 +1,176 @@
+
+html{
+    width: 100%;
+    height: 100% ;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100% ;
+    height: 100% ;
+}
+
+
+h1 , h2 , a, button{
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+
+header {
+    background-color: #85CDF5;
+    width: 100%;
+    height: 130px; 
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav a{
+    margin-top: 15px;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700 ;
+}
+
+header nav a img {
+    width: 90px;
+    height: 100px;
+}
+
+
+main{
+    margin-top: 7% ;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100% ;
+    height: 55% ;
+    
+}
+
+main h1{
+    font-size: 36px ;
+    font-weight: 800;
+}
+
+
+
+.section{
+    display: flex ;
+    flex-direction: row ;
+    gap: 30px ;
+}
+
+
+.section p{
+    width: 478px;
+    height: 497px ;
+    font-size: 24px;
+    line-height: 20px ;
+}
+
+
+
+
+.wolf{
+    display: flex ;
+    flex-direction: column;
+    margin-left: 178px ;
+    
+}
+
+
+.wolf img{
+    width: 430px ;
+    height: 328px ; 
+
+}
+
+.botao{
+    width: 430px ;
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between ;
+}
+
+.botao button{
+    margin-top: 20px ;
+    width: 180px ;
+    height: 56px ;
+}
+
+
+#adotar{
+    color: white;
+    background-color: green;
+    font-size: 18px;
+}
+
+#excluir{
+    color: white;
+    background-color: red;
+    font-size: 18px;
+
+}
+
+
+footer {
+    
+    width: 100%;
+    height: 270px ;
+    background-color: #333333;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    gap: 50px;
+    justify-content: center;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+}
+
+.contato img {
+    width: 380px;
+    height: 100px;
+
+}
+
+.contato button{
+    margin-top: 10px;
+    width: 140px;
+    height: 30px;
+    background-color: #DEB959;
+}
+
+.patas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.patas img{
+    width: 100px;
+    height: 100px;
+}
+
+.patas p{
+    font-size: 18px;
+    color: white;
+}
+
+
+
+
+
