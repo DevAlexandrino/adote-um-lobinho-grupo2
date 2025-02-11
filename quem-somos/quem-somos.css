@@ -1,12 +1,13 @@
 /* Estilizações Globais*/
 body {
     margin: 0;
+    padding: 0px;
 }
 
 /*--------------------------------------HEADER PADRONIZADO----------------------------------------------------------*/
 header {
     margin-bottom: 75px;
-    width: 100vw;
+    width: 100%;
     height: 130px;
     background-color: rgba(133, 205, 245, 1);
     display: flex;
@@ -15,10 +16,11 @@ header {
 }
 #headerLogo {
     transition: transform 0.2s ease;
-}
-#headerLogo:hover {
-    transform: scale(0.8);
-}                                                     /* HEADER PADRONIZADO */
+
+    &:hover {
+        transform: scale(0.8);
+    }             
+}                                        /* HEADER PADRONIZADO */
 .link {
    font-family: 'Darker Grotesque', sans-serif; 
    font-weight: 700;
@@ -27,10 +29,11 @@ header {
    color: rgba(51, 51, 51, 1);
    border: none;
    transition: transform 0.2s ease;
-}
-.link:hover {
-    color: #04a76b;
-    transform: scale(1.5)
+
+    &:hover {
+        color: #04a76b;
+        transform: scale(1.5);
+    }
 }
 /*--------------------------------------HEADER PADRONIZADO-----------------------------------------------------------------*/
 
@@ -56,13 +59,13 @@ header {
 
 /*-------------------------------------FOOTER PADRONIZADO---------------------------------------------------------------*/
 footer {
-    width: 100vw;
+    width: 100%;
     height: 270px;
     background-color: rgba(51, 51, 51, 1);
 }
 #footerBorder {
     background-image: linear-gradient(to left, #2C5680, #DEB959);
-    width: 100vw;
+    width: 100%;
     height: 5px;
     margin-top: 120px
 }
@@ -81,7 +84,13 @@ footer {
 #footerDatasDiv {
     display: flex;
     flex-direction: column;
-}                                                   /* FOOTER PADRONIZADO  */
+}
+/*-------------------------------------FOOTER PADRONIZADO----------------------------------------------------------------*/
+#footerOrganizer {
+    width: 100%;
+    height: 350px;
+    background-color: #353535;
+}
 .footerData {
     font-size: 18px;
     color: white;
@@ -95,6 +104,12 @@ footer {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    
+    &:hover {
+        color: #04a76b;
+        transform: scale(1.1);
+        transition: 0.2s ease;
+    }
 }
 #footerButton {
     font-family: 'Darker Grotesque', sans-serif;
@@ -103,10 +118,12 @@ footer {
     color: #353535;
     text-decoration: none;
     transition: 0.2s ease;
-}
-#footerButton:hover {
-    color: #04a76b;
-    transform: scale(0.8)
+
+    &:hover {
+        color: #04a76b;
+        transform: scale(1.05);
+        transition: 0.2s ease;
+    }
 }
 #footerLogoDiv {
     display: flex;
@@ -116,10 +133,10 @@ footer {
 }
 #footerLogo {
     transition: 0.2s ease;
-}
-#footerLogo:hover {
-    transform: scale(0.8);
-    cursor: pointer;
+
+    &:hover {
+        transform: scale(0.8);
+        cursor: pointer;
+    }
 }
 /*-------------------------------------FOOTER PADRONIZADO----------------------------------------------------------------*/
-
