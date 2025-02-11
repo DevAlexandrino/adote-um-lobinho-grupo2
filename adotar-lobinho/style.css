@@ -1,0 +1,231 @@
+
+html{
+    width: 100%;
+    height: 100% ;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100% ;
+    height: 100% ;
+}
+
+
+
+h1 , h3, a{
+    font-family: 'Darker Grotesque', sans-serif;
+}
+      
+
+
+
+header {
+    background-color: #85CDF5;
+    width: 100%;
+    height: 130px; 
+}
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav a{
+    margin-top: 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700 ;
+    font-size: 30px;
+}
+
+header nav a img {
+    width: 90px;
+    height: 100px;
+}
+
+.wolf{
+    margin-top: 2% ;
+    width: 80%;
+    height: 25% ;
+    display: flex;
+    flex-direction: row ;
+    margin-left: 20%;
+    gap: 7%;
+    
+}
+
+
+.wolf img{
+    width: 200px;
+    height: 200px ;
+    border-radius: 900px ;
+}
+
+
+.wolf h1{
+    font-size: 60px ;
+    height: 21px;
+}
+
+.wolf h3{
+    font-size: 14px ;
+}
+
+.entrada{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between ;
+}
+
+.titulo h1{
+    margin-left: 200px ;
+    margin-right: 200px;
+    font-size: 30px;
+}
+
+
+.inputs{
+    display: flex ;
+    flex-direction: row ;
+    justify-content: center;
+    
+
+}
+
+
+
+.name{
+    width: 868px ;
+    border-left: white ;
+    border-right: white ;
+    border-top: white;
+
+}
+
+
+.age{
+    width: 100px;
+    margin-left: 70px ;
+    border-left: white ;
+    border-right: white ;
+    border-top: white;
+
+}
+
+.email{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    
+}
+
+.email h1{
+    margin-left: 200px;
+    font-size: 30px;
+}
+
+.email input {
+    margin-left: 180px ;
+    margin-bottom: 30px ;
+    width: 1125px ;
+    border-left: white ;
+    border-right: white ;
+    border-top: white;
+
+}
+
+.email button{
+    width: 209px ;
+    height: 60px;
+    background-color: #2C5680;
+    color: white;
+    margin-left: 650px;
+    margin-top: 30px;
+}
+
+
+
+/*--------------------------*/
+footer {
+    width: 100%;
+    height: 270px;
+    background-color: #333333;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    gap: 50px;
+    justify-content: center;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+}
+
+.contato img {
+    width: 380px;
+    height: 100px;
+
+}
+
+.contato button{
+    margin-top: 10px;
+    width: 140px;
+    height: 30px;
+    background-color: #DEB959;
+}
+
+.patas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.patas img{
+    width: 100px;
+    height: 100px;
+}
+
+.patas p{
+    font-size: 18px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
