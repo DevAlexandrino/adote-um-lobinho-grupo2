@@ -71,6 +71,38 @@ header nav a img {
     height: 360px;
 }
 
+.nomeebotao{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nomeebotao button{
+    width: 150px;
+    height: 45px;
+    font-size: 30px;
+    background-color: #DEB959;
+    border: none;
+    color: white;
+}
+
+.nomeebotao2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    
+}
+
+.nomeebotao2 button{
+    width: 150px;
+    height: 45px;
+    font-size: 30px;
+    background-color: #DEB959;
+    border: none;
+    color: white;
+}
+
 .descricao2{
     display: flex;
     flex-direction: column;
@@ -96,11 +128,62 @@ header nav a img {
     border: 1px solid black;
 }
 
-#pagination {
+#pagination{
     display: flex;
-    gap: 5px;
     justify-content: center;
+    margin-top: 20px;
+}
+
+.foto {
+    width: 430px;
+    height: 328px;
+    object-fit: cover;
+}
+
+/*-------------------------------------------FOOTER------------------------------------*/
+
+footer {
+    width: 100%;
+    height: 270px;
+    background-color: #333333;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     margin-top: 20px;
-    border: none;
+    gap: 50px;
+    justify-content: center;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+}
+
+.contato img {
+    width: 380px;
+    height: 100px;
+
+}
+
+.contato button{
+    margin-top: 10px;
+    width: 140px;
+    height: 30px;
+    background-color: #DEB959;
+}
+
+.patas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.patas img{
+    width: 100px;
+    height: 100px;
+}
+
+.patas p{
+    font-size: 18px;
+    color: white;
 }
