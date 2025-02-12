@@ -35,87 +35,93 @@ header {
 /*--------------------------------------HEADER PADRONIZADO-----------------------------------------------------------------*/
 
 /*-------------------------------------------MAIN---------------------------------------------------------------------------*/
-h1 , h2 , a, button{
-    font-family: 'Darker Grotesque', sans-serif;
-}
-
-
-main{
-    margin-top: 7% ;
-    
+#wolfData {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100% ;
-    height: 55% ;
-    
+    margin-bottom: 70px;
 }
-
-main h1{
-    font-size: 36px ;
-    font-weight: 800;
+#nomeLobo {
+    font-size: 36px;
+    font-family: "Roboto";
+    font-weight: 600;
+    margin: 0;
 }
-
-
-
-.section{
-    display: flex ;
-    flex-direction: row ;
-    gap: 30px ;
-}
-
-
-.section p{
-    width: 478px;
-    height: 497px ;
+#idadeLobo {
     font-size: 24px;
-    line-height: 20px ;
+    font-family: "Roboto";
+    font-weight: 600;
+    margin: 0;
+    margin-left: 100px;
 }
-
-
-
-
-.wolf{
-    display: flex ;
-    flex-direction: column;
-    margin-left: 178px ;
-    
-}
-
-
-.wolf img{
-    width: 430px ;
-    height: 328px ; 
-
-}
-
-.botao{
-    width: 430px ;
+#wolfTopic {
     display: flex;
-    flex-direction: row ;
-    justify-content: space-between ;
+    height: 530px;
+    width: 100%;
+    justify-content: center;
 }
-
-.botao button{
-    margin-top: 20px ;
-    width: 180px ;
-    height: 56px ;
+#wolfDiv {
+    display: flex;
+    border-left: 4px solid black;
+    border-top: 4px solid black;
 }
-
-
-#adotar{
-    color: white;
-    background-color: green;
+#wolfImg {
+    width: 430px;
+    height: 328px;
+    border-left: 30px solid #2C5680;
+    border-top: 30px solid #2C5680;
+}
+#wolfButtonsDiv {
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+}
+#buttonsDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.button {
+    width: 180px;
+    height: 56px;
+    margin: 0;
+    background-color: #7AAC3A;
+    outline: none;
+    border: none;
+    font-family: 'Roboto';
     font-size: 18px;
-}
-
-#excluir{
+    font-weight: 500;
     color: white;
-    background-color: red;
-    font-size: 18px;
-
+    transition: 0.2s;
 }
+.button:hover {
+    transform: scale(0.8);
+    cursor: pointer;
+    color: yellow;
+}
+#adotar {
+    background-color: #7AAC3A;
+}
+#excluir {
+    background-color: #DE5959;
+}
+#description {
+    width: 478px;
+    height: 491px;
+    margin-left: 25px;
+    font-family: "Darker Grotesque";
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
 /*-------------------------------------------MAIN---------------------------------------------------------------------------*/
 
 /*-------------------------------------FOOTER PADRONIZADO---------------------------------------------------------------*/

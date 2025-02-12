@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
     }
 
-    document.getElementById("nome").innerText = loboSelecionado.nome;
-    document.getElementById("foto").src = loboSelecionado.imagem;
-    document.getElementById("idade").innerText = `Idade: ${loboSelecionado.idade} anos`;
-    document.getElementById("descricao").innerText = loboSelecionado.descricao;
+    document.getElementById("nomeLobo").innerText = loboSelecionado.nome;
+    document.getElementById("wolfImg").src = loboSelecionado.imagem;
+    document.getElementById("idadeLobo").innerText = `Idade: ${loboSelecionado.idade} anos`;
+    document.getElementById("description").innerText = loboSelecionado.descricao;
 
     let botaoAdotar = document.getElementById("adotar");
     if (loboSelecionado.adotado) {
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // **Funcionalidade do botão "Excluir"**
-    let botaoExcluir = document.getElementById("excluirlobo");
+    let botaoExcluir = document.getElementById("excluir");
     botaoExcluir.addEventListener("click", function() {
         // Confirmação antes de excluir
         let confirmacao = confirm(`Tem certeza que deseja excluir o lobo ${loboSelecionado.nome}?`);
