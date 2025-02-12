@@ -201,11 +201,11 @@ footer {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    transition: 0.2s ease;
     
     &:hover {
         color: #04a76b;
-        transform: scale(1.1);
-        transition: 0.2s ease;
+        transform: scale(0.8);
     }
 }
 #footerButton {
@@ -218,7 +218,7 @@ footer {
 
     &:hover {
         color: #04a76b;
-        transform: scale(1.05);
+        transform: scale(0.8);
         transition: 0.2s ease;
     }
 }
