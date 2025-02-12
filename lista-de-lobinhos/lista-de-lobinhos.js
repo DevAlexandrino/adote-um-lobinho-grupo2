@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     // Salvar lobo no localStorage ao clicar no botão "Adotar"
                     botao.addEventListener("click", function() {
                         localStorage.setItem("loboSelecionado", JSON.stringify(paginatedLobos[index]));
-                        window.location.href = "/show-lobinho/show_lobinho.html";
+                        window.location.href = "../show-lobinho/show_lobinho.html";
                     });
                 }
     

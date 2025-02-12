@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector("#wolfImg").src = loboSelecionado.imagem;
 
     // Captura o botão de adoção
-    let botaoAdotar = document.querySelector(".email button");
+    let botaoAdotar = document.querySelector("#button");
     botaoAdotar.addEventListener("click", function (event) {
         event.preventDefault();
         
